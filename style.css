@@ -285,7 +285,7 @@ select,  {
 }
 
 .color-row {
-    display: flex;
+  
     align-items: left;
     gap: 8px;
     margin-top: 5px;
@@ -307,16 +307,16 @@ select,  {
     color: white;
 }
 
-#OderNowButton {
+#OrderNowButton {
     background-color: #4CAF50; /* Màu xanh lá */
 }
 
-#OderNowButton:hover {
-    background-color: #388e3c;
+#OrderNowButton:hover {
+    background-color: #388e3c; imfortant!
 }
 
-#OderNowButton:active {
-    background-color: ##388e3c;
+#OrderNowButton:active {
+    background-color: ##388e3c; imfortant!
     transform: scale(0.98);
 }
 
@@ -325,11 +325,11 @@ select,  {
     margin-left: 10px;
 }
 
-#addToCartButton:hover {
+#AddToCartButton:hover {
     background-color: #d12a2a;
 }
 
-#addToCartButton:active {
+#AddToCartButton:active {
     background-color: #b21e1e;
     transform: scale(0.98);
 }
@@ -504,6 +504,7 @@ select,  {
       
         max-width: 60vw;
         margin-bottom: 5px;
+        top: 27px;
     }
 
     .product {
@@ -597,7 +598,7 @@ nav ul li a {
 @media (max-width: 480px) {
 #home.banner h2 {
     font-size: 16PX;
-    font-weight: NORMAL;
+    font-weight: bold;
     COLOR: #666;
 padding-top: 15px;
 }
@@ -606,4 +607,10 @@ padding-top: 15px;
     font-size: 12px;
     color: #666;
     FONT-STYLE: ITALIC;
+}
+@media (max-width: 480px) {
+logo img {
+    position: absolute;
+    right: 32px;
+    top: 26px;
 }
