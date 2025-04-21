@@ -217,6 +217,7 @@ flex-direction: column;
       <input type="hidden" name="size" id="sizeHidden" />
       <input type="hidden" name="color" id="colorHidden" />
       <input type="hidden" name="quantity" id="quantityHidden" />
+<input type="hidden" name="productImageHtml" id="imageHtmlHidden" />
 
       <!-- Không cần redirect -->
       <!-- <input type="hidden" name="_redirect" value="thank-you.html" /> -->
@@ -254,6 +255,7 @@ flex-direction: column;
     document.getElementById("sizeHidden").value = size || "-";
     document.getElementById("colorHidden").value = color || "-";
     document.getElementById("quantityHidden").value = quantity || "1";
+document.getElementById("imageHtmlHidden").value = image ? `<img src="${image}" width="200" />` : "";
 
     // Gửi form và hiện thông báo
     const form = document.getElementById("orderForm");
