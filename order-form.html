@@ -255,7 +255,7 @@ flex-direction: column;
     document.getElementById("sizeHidden").value = size || "-";
     document.getElementById("colorHidden").value = color || "-";
     document.getElementById("quantityHidden").value = quantity || "1";
-document.getElementById("imageHtmlHidden").value = image ? `<img src="${image}" width="200" />` : "";
+document.getElementById("imageHtmlHidden").value = image || "Không có ảnh";
 
     // Gửi form và hiện thông báo
     const form = document.getElementById("orderForm");
